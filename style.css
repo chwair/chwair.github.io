@@ -267,6 +267,7 @@ body {
   width: 300px;
   height: 200px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin:0px auto;
 }
 
 /* This container is needed to position the front and back side */
