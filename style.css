@@ -2,14 +2,21 @@
 directly on our existing text, while
 also setting content to the appropriate
 text set in the data-text attribute. */
+
+@font-face {
+   font-family: Montserrat Regular;
+   src: url('Montserrat-Regular.ttf');
+}
 .glitch {
   position: relative;
+  font-family: 'Montserrat Regular';
   color: white;
   font-size: 4em;
   letter-spacing: 0.5em;
   /* Animation provies a slight random skew. Check bottom of doc
   for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
+  
 }
 .glitch::before {
   content: attr(data-text);
