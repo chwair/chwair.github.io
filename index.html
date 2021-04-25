@@ -1,38 +1,7 @@
 <html>
   <head>
     <title>// chwr</title>
-    <style>
-      @font-face {
-        font-family: 'Alata Regular';
-        src: url('Alata-Regular.ttf');
-      }
-      .text {
-        font-family: 'Alata Regular';
-        font-size:55px;
-      }
-      .title {
-        font-family: 'Alata Regular';
-        font-size:85px;
-        height:110px;
-        background: -webkit-linear-gradient(#bea0ff, #a0b8ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      #backgroundfx {
-        background: -webkit-linear-gradient(#bea0ff, #a0b8ff);
-        font-size:900px;
-        font-family: 'Alata Regular';
-      }
-      #backgroundfx2 {
-        background: -webkit-linear-gradient(#bea0ff, #a0b8ff);
-        font-size:900px;
-        font-family: 'Alata Regular';
-      }
-      .backgroundfx {
-        background: -webkit-linear-gradient(#bea0ff, #a0b8ff);
-        font-size:400px;
-        font-family: 'Alata Regular';
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <script>
@@ -41,22 +10,13 @@
         var y = e.clientY / 15; 
         document.getElementById('backgroundfx').style.marginLeft  = x+"px";
         document.getElementById('backgroundfx').style.marginTop  = y+"px";
-        var x2 = e.clientX / 35; 
-        var y2 = e.clientY / 8; 
-        document.getElementById('backgroundfx2').style.marginLeft  = x2+"px";
-        document.getElementById('backgroundfx2').style.marginTop  = y2+"px";
-        var x3 = e.clientX / 35; 
-        var y3 = e.clientY / 15; 
-        document.getElementById('backgroundfx3').style.marginLeft  = x3+"px";
-        document.getElementById('backgroundfx3').style.marginTop  = y3+"px";
-        var x4 = e.clientX / 35; 
-        var y4 = e.clientY / 15; 
-        document.getElementById('backgroundfx4').style.marginLeft  = x4+"px";
-        document.getElementById('backgroundfx4').style.marginTop  = y4+"px";
       }
     </script>
-    <div class="title" id="backgroundfx">// chwr</div>
-    <div height="200px" id="backgroundfx2"></div>
-    <div class="text" id="backgroundfx3">welcome to my humble website</div>
-    <div class="text" id="backgroundfx4">theres not much here yet but ill add it soon</div>
+    <div id="app">
+	  <div id="wrapper">
+	  	<!-- Make sure data-text equals the text you put inside the tags. -->
+	  	<h1 class="glitch" data-text="glitch">glitch</h1>
+      	</div>
+    </div>
   </body>
+</html>
