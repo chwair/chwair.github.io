@@ -32,14 +32,14 @@
   <body>
     <script>
       document.onmousemove = function(e) { 
-        var x = e.clientX / 5; 
-        var y = e.clientY / 5; 
+        var x = e.clientX / 10; 
+        var y = e.clientY / 10; 
         document.getElementById('backgroundfx').style.marginLeft  = x+"px";
         document.getElementById('backgroundfx').style.marginTop  = y+"px";
       }
     </script>
-    <div class="title">// chwr</div>
-    <div class="text">welcome to my humble website</div>
-    <div class="text">theres not much here yet but ill add it soon</div>
+    <div class="title" id="backgroundfx">// chwr</div>
+    <div class="text" style="text-align:center;" id="backgroundfx">welcome to my humble website</div>
+    <div class="text" style="text-align:center;" id="backgroundfx">theres not much here yet but ill add it soon</div>
     <div class="backgroundfx" id="backgroundfx" style="text-align:center;">//</div>
   </body>
