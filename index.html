@@ -22,19 +22,24 @@
         font-size:900px;
         font-family: 'Alata Regular';
       }
+      .backgroundfx {
+        background: -webkit-linear-gradient(#bea0ff, #a0b8ff);
+        font-size:900px;
+        font-family: 'Alata Regular';
+      }
     </style>
   </head>
   <body>
     <script>
       document.onmousemove = function(e) { 
-        var x = e.clientX; 
-        var y = e.clientY; 
+        var x = e.clientX / 5; 
+        var y = e.clientY / 5; 
         document.getElementById('backgroundfx').style.marginLeft  = x+"px";
         document.getElementById('backgroundfx').style.marginTop  = y+"px";
       }
     </script>
-    <div id="backgroundfx">//</div>
     <div class="title">// chwr</div>
     <div class="text">welcome to my humble website</div>
     <div class="text">theres not much here yet but ill add it soon</div>
+    <div id="backgroundfx" class="backgroundfx">//</div>
   </body>
